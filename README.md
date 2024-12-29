@@ -18,9 +18,20 @@ echo \
 sudo apt-get update
 ```
 
+### Create data directory (use your preferred path)
+```
+sudo mkdir -p /home/your-username/docker-data
+```
+Set permissions to allow read/write from inside the container
+```
+sudo chmod -R a+rwx /home/your-username/docker-data/
+```
+
 ## Docker Desktop
 
-### Download and install Docker Desktop https://docs.docker.com/desktop/setup/install/
+### Download and install Docker Desktop 
+https://docs.docker.com/desktop/setup/install/
+
 - Launch Docker Desktop
   
 ![image](https://github.com/user-attachments/assets/ed57f40e-29b3-465d-a767-8c1ac17b933e)
@@ -34,7 +45,7 @@ sudo apt-get update
 Select the Terminal word in the bottom right corner to bring up the terminal console.
 In the terminal window, run the following commands.
 ```
-$ docker run -dit ubuntu:24.10
+$ docker run -ditv /home/your-username/docker-data:/data ubuntu:24.10
 ```
 In the terminal window, connect to the container.
 ```
@@ -58,6 +69,7 @@ lawrence
 $ sudo whoami
 [sudo] password for lawrence: 
 root
-$ exit
+$ sudo chown lawrence /data
+$ sudo chgrp lawrence /data
 ```
 
