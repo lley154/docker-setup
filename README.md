@@ -45,7 +45,7 @@ https://docs.docker.com/desktop/setup/install/
 Select the Terminal word in the bottom right corner to bring up the terminal console.
 In the terminal window, run the following commands.
 ```
-$ docker run -ditv /home/your-username/docker-data:/data ubuntu:24.10
+$ docker run -ditv /home/your-username/docker-data:/data -p 18333:18333 ubuntu:24.10
 ```
 In the terminal window, connect to the container.
 ```
