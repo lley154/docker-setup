@@ -26,6 +26,17 @@ Set permissions to allow read/write from inside the container
 ```
 sudo chmod -R a+rwx /home/your-username/docker-data/
 ```
+## Mac OS
+
+- Go to https://docs.docker.com/desktop/setup/install/mac-install/ and download the correct version of Docker Desktop
+
+- Double-click Docker.dmg to open the installer, then drag the Docker icon to the Applications folder. By default, Docker Desktop is installed at /Applications/Docker.app.
+
+- Double-click Docker.app in the Applications folder to start Docker.
+- Select recommended installation
+- If prompted, install Rosetta to enable Intel-based features
+- Allow docker to find services on local networks
+
 
 ## Docker Desktop
 
