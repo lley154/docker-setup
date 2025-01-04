@@ -1,4 +1,4 @@
-# Docker Setup
+# Docker Install
 ## Linux OS
 ### Add Docker's official GPG key:
 ```
@@ -18,7 +18,7 @@ echo \
 sudo apt-get update
 ```
 
-### Create data directory (use your preferred path)
+### Create data directory (use your preferred path) using Linux shell window
 ```
 sudo mkdir -p /home/your-username/docker-data
 ```
@@ -37,10 +37,17 @@ sudo chmod -R a+rwx /home/your-username/docker-data/
 - If prompted, install Rosetta to enable Intel-based features
 - Allow docker to find services on local networks
 
+### Create data directory (use your preferred path) using Mac OS Terminal shell window
+```
+sudo mkdir -p /Users/your-username/docker-data
+```
+Set permissions to allow read/write from inside the container
+```
+sudo chmod -R a+rwx /Users/your-username/docker-data/
+```
 
-## Docker Desktop
+# Docker Desktop Setup
 
-### Download and install Docker Desktop 
 https://docs.docker.com/desktop/setup/install/
 
 - Launch Docker Desktop
