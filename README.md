@@ -18,6 +18,8 @@ echo \
 sudo apt-get update
 ```
 
+- Go to https://docs.docker.com/desktop/setup/install/linux/ and download the correct version of Docker Desktop
+
 ### Create data directory (use your preferred path) using Linux shell window
 ```
 sudo mkdir -p /home/your-username/docker-data
@@ -87,17 +89,17 @@ In the terminal window, run the following commands.
 
 #### For Linux OS
 ```
-$ docker run -ditv /home/your-username/docker-data:/data -p 18333:18333 ubuntu:24.10
+$ docker run -ditv /home/your-username/docker-data:/data --network host ubuntu:24.10
 ```
 
 #### For Mac OS
 ```
-$ docker run -ditv /Users/your-username/docker-data:/data -p 18333:18333 ubuntu:24.10
+$ docker run -ditv /Users/your-username/docker-data:/data --network host ubuntu:24.10
 ```
 
 #### For Window OS
 ```
-$ docker run -ditv C:\Users\your-username\docker-data:/data -p 18333:18333 ubuntu:24.10
+$ docker run -ditv C:\Users\your-username\docker-data:/data --network host ubuntu:24.10
 ```
 
 
